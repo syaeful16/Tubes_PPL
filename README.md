@@ -13,3 +13,5 @@
 2. Lalu ekstrak.. Pindahkan folder ekstrak tersebut ke **C:\xampp\htdocs**
 3. Untuk menjalankannya anda klik URL berikut <http://localhost/Tubes_PPL-master>
 4. Done
+
+#Semangat Gess
