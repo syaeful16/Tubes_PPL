@@ -10,5 +10,6 @@
 
 ## Konfigurasi HTML
 1. Download repository as **ZIP**
-2. Lalu ekstrak.. Pindahkan folder ekstrak tersebut ke **C:\xampp\htdocs**
-3. Untuk menjalankannya anda klik URL berikut <http://localhost/phpmyadmin>
+2. Lalu ekstrak.. Pindahkan folder ekstrak tersebut ke **C:\xampp\htdocs\**
+3. Untuk menjalankannya anda klik URL berikut <http://localhost/Tubes_PPL-master>
+4. Done
