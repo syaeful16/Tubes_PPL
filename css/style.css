@@ -1,0 +1,60 @@
+body {
+    background: whitesmoke;
+}
+
+.style-search {
+    width: 80%;
+    height: 40px;
+    border-radius: 30px solid;
+    
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    margin: 10px;
+    width: 188px;
+    height: 240px;
+    background: white;
+    list-style: none;
+}
+
+.info-book {
+    padding-left: 8px;
+}
+
+.img-view {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    background: brown;
+    position: inherit;
+}
+
+.btn-filter {
+    width: 100%;
+    margin-top: 30px;
+}
+
+img {
+    z-index: 1;
+    position: relative;
+    top: 0;
+}
+
+.box {
+    position: absolute;
+    z-index: 2;
+    top: 20px;
+    color: white;
+}
+
+.active {
+    color: royalblue;
+}

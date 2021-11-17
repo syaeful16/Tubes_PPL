@@ -1,0 +1,16 @@
+form {
+    width: 500px;
+}
+
+#display_images {
+    width: 230px;
+    height: 150px;
+    border: 1px solid red;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.col {
+    width: 250px;
+}
