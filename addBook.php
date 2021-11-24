@@ -38,7 +38,7 @@
         $tmpName = $_FILES['input_img']['tmp_name'];
 
         if ($error === 4){
-            echo "<script>alert('pilih gambar terlebih dahulu')</script>";
+            echo "<script>alert('pilih gambar terlebih dahulu'); document.location.href = 'addBook.php';</script>";
             return false;
         }
 
@@ -47,12 +47,12 @@
         $ektensiGambar = strtolower(end($ektensiGambar));
 
         if(!in_array($ektensiGambar, $ektensiGambarValid)) {
-            echo "<script>alert('Yang anda upload bukan gambar!')</script>";
+            echo "<script>alert('Yang anda upload bukan gambar!'); document.location.href = 'addBook.php';</script>";
             return false;
         }
 
         if ( $ukuranFile > 1048576) {
-            echo "<script>alert('Ukuran gambar terlalu besar!')</script>";
+            echo "<script>alert('Ukuran gambar terlalu besar!'); document.location.href = 'addBook.php';</script>";
             return false;
         }
 
@@ -86,19 +86,20 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container ps-5 pe-5">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.php">
                 <img src="img/icon.png" alt="" width="30" height="24" class="d-inline-block align-text-top"> Star Book
             </a>
             <div class="navbar-nav ms-auto">
-                <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
+                <a class="nav-link" href="penjualan.php"><i class="fas fa-shopping-cart"></i></a>
                 <a class="nav-link" href="dataBook.php"><i class="fas fa-cog"></i></a>
                 <a class="nav-link active" href="addBook.php"><i class="fas fa-plus"></i></a>
+                <a class="nav-link" href="about.php">About</a>
             </div>
         </div>
     </nav>
     <div class="container d-flex justify-content-center align-items-center">
-        <form class="pt-5 mt-5" action="" method="POST" enctype="multipart/form-data">
-            <h2>Tambah Buku</h2>
+        <form class="mt-5" action="" method="POST" enctype="multipart/form-data">
+            <h2 class="mb-5 text-center">Tambah Buku</h2>
             <?php if ($gagal) { ?>
                 <div class="alert alert-danger" role="alert">
                 <?php echo $gagal ?>
@@ -145,7 +146,7 @@
                     <option value="dongeng" <?php if($kategoriBuku == "dongeng")?>>dongeng</option>
                 </select>
             </div>
-            <button type="submit" name="tambah" class="btn btn-primary mt-5">Submit</button>
+            <button type="submit" style="width:100%;" name="tambah" class="btn btn-primary mt-5">Submit</button>
         </form>
     </div>
 
